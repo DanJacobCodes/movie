@@ -14,6 +14,48 @@
   <body>
     <div class="container">
       <h1>Movie Ticket Cost Calculator</h1>
-
+<!-- form checkbox for new release
+form checkbox for matinee
+form select box for child, adult, senior -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="padding">
+            <h4>New Releases</h4>
+            <p>Smurfs: The Lost Village</p>
+            <p>Colossal</p>
+            <p>Gifted</p>
+          </div>
+          <div class="padding">
+            <h4>Still in Theatres</h4>
+            <p>Life</p>
+            <p>CHIPS</p>
+            <p>Logan</p>
+          </div>
+          <form id="form" >
+            <div class="padding">
+              <input type="checkbox" name="newRelease" value="newRelease">New Release
+            </div>
+            <div class="padding">
+            <input type="checkbox" name="matinee" value="matinee">Matinee
+            </div>
+            <div class="padding">
+              <select class="form-control" id="age">
+                <option value="adult">Adult</option>
+                <option value="child">Child</option>
+                <option value="senior">Senior</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Check Price</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="cost">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
